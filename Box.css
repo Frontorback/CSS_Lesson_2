@@ -1,0 +1,75 @@
+.logo {
+    background: #e2e270;
+}
+
+.menu{
+    background: red;
+}
+
+.nav{
+    background: grey;
+}
+
+.list{
+    background: #e2e270;
+}
+
+.news{
+    background: brown;
+}
+
+.footer{
+    background: #e2e270;
+}
+
+
+/* GRID */
+
+html{
+    height: 100%;
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template: 
+    "logo menu menu"
+    "news list nav"
+    "footer footer nav"
+    ;
+
+    grid-template-columns: 100px 35fr 65fr;
+    grid-template-rows: 100px 300px 150px;
+
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.news {
+    grid-area: news;
+}
+
+.list {
+    grid-area: list;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.footer {
+    grid-area: footer;
+}
+
